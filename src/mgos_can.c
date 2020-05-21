@@ -184,7 +184,7 @@ bool mgos_can_transmit(can_message_t *can_data, uint64_t ms)
     return status;
 }
 
-bool mgos_can_receive(can_message_t *message, uint64_t ms)
+bool mgos_can_receive(can_message_t *can_data, uint64_t ms)
 {
 	esp_err_t ret;
 	bool status = 0;
